@@ -30,11 +30,6 @@ import {
 import EventDetailPage from '../pages/events/EventDetailPage';
 import EnvironmentalPolicyPage from '../pages/events/EnvironmentalPolicyPage';
 
-import EducationPage, {
-  CoursesPage,
-  EducationCalendarPage,
-} from '../pages/education/EducationPages';
-
 import CommunitiesPage, {
   LocalChaptersPage,
   CommunityDetailPage,
@@ -65,6 +60,7 @@ import ContactPage, {
 } from '../pages/contact/ContactPages';
 
 import { DisclaimerPage, CookiesPage } from '../pages/legal/LegalPages';
+import SponsorsPage from '../pages/sponsors/SponsorsPage';
 import CheckoutPage from '../pages/checkout/CheckoutPage';
 import CheckoutGatewayPage from '../pages/checkout/CheckoutGatewayPage';
 import CheckoutSuccessPage from '../pages/checkout/CheckoutSuccessPage';
@@ -104,11 +100,6 @@ const router = createBrowserRouter([
       { path: 'events/environmental-policy', element: <EnvironmentalPolicyPage /> },
       { path: 'events/:type/:slug', element: <EventDetailPage /> },
 
-      // Education
-      { path: 'education', element: <EducationPage /> },
-      { path: 'education/courses', element: <CoursesPage /> },
-      { path: 'education/calendar', element: <EducationCalendarPage /> },
-
       // Communities
       { path: 'communities', element: <CommunitiesPage /> },
       { path: 'communities/local-chapters', element: <LocalChaptersPage /> },
@@ -116,6 +107,9 @@ const router = createBrowserRouter([
 
       // Students
       { path: 'students', element: <StudentsPage /> },
+
+      // Sponsors
+      { path: 'sponsors', element: <SponsorsPage /> },
 
       // News
       { path: 'news', element: <NewsPage /> },
